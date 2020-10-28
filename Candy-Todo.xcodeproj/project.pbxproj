@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84E1EF8A2549B499007297ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EF892549B499007297ED /* AppDelegate.swift */; };
+		84E1EF8C2549B499007297ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EF8B2549B499007297ED /* SceneDelegate.swift */; };
+		84E1EF8E2549B499007297ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EF8D2549B499007297ED /* ViewController.swift */; };
+		84E1EF912549B499007297ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E1EF8F2549B499007297ED /* Main.storyboard */; };
+		84E1EF932549B49C007297ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E1EF922549B49C007297ED /* Assets.xcassets */; };
+		84E1EF962549B49C007297ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E1EF942549B49C007297ED /* LaunchScreen.storyboard */; };
+		84E1EFA12549B49C007297ED /* Candy_TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EFA02549B49C007297ED /* Candy_TodoTests.swift */; };
+		84E1EFAC2549B49C007297ED /* Candy_TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EFAB2549B49C007297ED /* Candy_TodoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E1EF9D2549B49C007297ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E1EF7E2549B499007297ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E1EF852549B499007297ED;
+			remoteInfo = "Candy-Todo";
+		};
+		84E1EFA82549B49C007297ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E1EF7E2549B499007297ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E1EF852549B499007297ED;
+			remoteInfo = "Candy-Todo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84E1EF862549B499007297ED /* Candy-Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Candy-Todo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E1EF892549B499007297ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84E1EF8B2549B499007297ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84E1EF8D2549B499007297ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E1EF902549B499007297ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E1EF922549B49C007297ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E1EF952549B49C007297ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E1EF972549B49C007297ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E1EF9C2549B49C007297ED /* Candy-TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Candy-TodoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E1EFA02549B49C007297ED /* Candy_TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy_TodoTests.swift; sourceTree = "<group>"; };
+		84E1EFA22549B49C007297ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E1EFA72549B49C007297ED /* Candy-TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Candy-TodoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E1EFAB2549B49C007297ED /* Candy_TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy_TodoUITests.swift; sourceTree = "<group>"; };
+		84E1EFAD2549B49C007297ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E1EF832549B499007297ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EF992549B49C007297ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EFA42549B49C007297ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84E1EF7D2549B499007297ED = {
+			isa = PBXGroup;
+			children = (
+				84E1EF882549B499007297ED /* Candy-Todo */,
+				84E1EF9F2549B49C007297ED /* Candy-TodoTests */,
+				84E1EFAA2549B49C007297ED /* Candy-TodoUITests */,
+				84E1EF872549B499007297ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84E1EF872549B499007297ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E1EF862549B499007297ED /* Candy-Todo.app */,
+				84E1EF9C2549B49C007297ED /* Candy-TodoTests.xctest */,
+				84E1EFA72549B49C007297ED /* Candy-TodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E1EF882549B499007297ED /* Candy-Todo */ = {
+			isa = PBXGroup;
+			children = (
+				84E1EF892549B499007297ED /* AppDelegate.swift */,
+				84E1EF8B2549B499007297ED /* SceneDelegate.swift */,
+				84E1EF8D2549B499007297ED /* ViewController.swift */,
+				84E1EF8F2549B499007297ED /* Main.storyboard */,
+				84E1EF922549B49C007297ED /* Assets.xcassets */,
+				84E1EF942549B49C007297ED /* LaunchScreen.storyboard */,
+				84E1EF972549B49C007297ED /* Info.plist */,
+			);
+			path = "Candy-Todo";
+			sourceTree = "<group>";
+		};
+		84E1EF9F2549B49C007297ED /* Candy-TodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84E1EFA02549B49C007297ED /* Candy_TodoTests.swift */,
+				84E1EFA22549B49C007297ED /* Info.plist */,
+			);
+			path = "Candy-TodoTests";
+			sourceTree = "<group>";
+		};
+		84E1EFAA2549B49C007297ED /* Candy-TodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84E1EFAB2549B49C007297ED /* Candy_TodoUITests.swift */,
+				84E1EFAD2549B49C007297ED /* Info.plist */,
+			);
+			path = "Candy-TodoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E1EF852549B499007297ED /* Candy-Todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E1EFB02549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-Todo" */;
+			buildPhases = (
+				84E1EF822549B499007297ED /* Sources */,
+				84E1EF832549B499007297ED /* Frameworks */,
+				84E1EF842549B499007297ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Candy-Todo";
+			productName = "Candy-Todo";
+			productReference = 84E1EF862549B499007297ED /* Candy-Todo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84E1EF9B2549B49C007297ED /* Candy-TodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E1EFB32549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-TodoTests" */;
+			buildPhases = (
+				84E1EF982549B49C007297ED /* Sources */,
+				84E1EF992549B49C007297ED /* Frameworks */,
+				84E1EF9A2549B49C007297ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E1EF9E2549B49C007297ED /* PBXTargetDependency */,
+			);
+			name = "Candy-TodoTests";
+			productName = "Candy-TodoTests";
+			productReference = 84E1EF9C2549B49C007297ED /* Candy-TodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84E1EFA62549B49C007297ED /* Candy-TodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E1EFB62549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-TodoUITests" */;
+			buildPhases = (
+				84E1EFA32549B49C007297ED /* Sources */,
+				84E1EFA42549B49C007297ED /* Frameworks */,
+				84E1EFA52549B49C007297ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E1EFA92549B49C007297ED /* PBXTargetDependency */,
+			);
+			name = "Candy-TodoUITests";
+			productName = "Candy-TodoUITests";
+			productReference = 84E1EFA72549B49C007297ED /* Candy-TodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E1EF7E2549B499007297ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					84E1EF852549B499007297ED = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					84E1EF9B2549B49C007297ED = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 84E1EF852549B499007297ED;
+					};
+					84E1EFA62549B49C007297ED = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 84E1EF852549B499007297ED;
+					};
+				};
+			};
+			buildConfigurationList = 84E1EF812549B499007297ED /* Build configuration list for PBXProject "Candy-Todo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E1EF7D2549B499007297ED;
+			productRefGroup = 84E1EF872549B499007297ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E1EF852549B499007297ED /* Candy-Todo */,
+				84E1EF9B2549B49C007297ED /* Candy-TodoTests */,
+				84E1EFA62549B49C007297ED /* Candy-TodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E1EF842549B499007297ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E1EF962549B49C007297ED /* LaunchScreen.storyboard in Resources */,
+				84E1EF932549B49C007297ED /* Assets.xcassets in Resources */,
+				84E1EF912549B499007297ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EF9A2549B49C007297ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EFA52549B49C007297ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E1EF822549B499007297ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E1EF8E2549B499007297ED /* ViewController.swift in Sources */,
+				84E1EF8A2549B499007297ED /* AppDelegate.swift in Sources */,
+				84E1EF8C2549B499007297ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EF982549B49C007297ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E1EFA12549B49C007297ED /* Candy_TodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E1EFA32549B49C007297ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E1EFAC2549B49C007297ED /* Candy_TodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E1EF9E2549B49C007297ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E1EF852549B499007297ED /* Candy-Todo */;
+			targetProxy = 84E1EF9D2549B49C007297ED /* PBXContainerItemProxy */;
+		};
+		84E1EFA92549B49C007297ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E1EF852549B499007297ED /* Candy-Todo */;
+			targetProxy = 84E1EFA82549B49C007297ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84E1EF8F2549B499007297ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E1EF902549B499007297ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E1EF942549B49C007297ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E1EF952549B49C007297ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E1EFAE2549B49C007297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84E1EFAF2549B49C007297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E1EFB12549B49C007297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-Todo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-Todo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E1EFB22549B49C007297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-Todo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-Todo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84E1EFB42549B49C007297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-TodoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-TodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Candy-Todo.app/Candy-Todo";
+			};
+			name = Debug;
+		};
+		84E1EFB52549B49C007297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-TodoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-TodoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Candy-Todo.app/Candy-Todo";
+			};
+			name = Release;
+		};
+		84E1EFB72549B49C007297ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-TodoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-TodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Candy-Todo";
+			};
+			name = Debug;
+		};
+		84E1EFB82549B49C007297ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T898NTACMU;
+				INFOPLIST_FILE = "Candy-TodoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ahh.devoders.Candy-TodoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Candy-Todo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E1EF812549B499007297ED /* Build configuration list for PBXProject "Candy-Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E1EFAE2549B49C007297ED /* Debug */,
+				84E1EFAF2549B49C007297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E1EFB02549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E1EFB12549B49C007297ED /* Debug */,
+				84E1EFB22549B49C007297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E1EFB32549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-TodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E1EFB42549B49C007297ED /* Debug */,
+				84E1EFB52549B49C007297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E1EFB62549B49C007297ED /* Build configuration list for PBXNativeTarget "Candy-TodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E1EFB72549B49C007297ED /* Debug */,
+				84E1EFB82549B49C007297ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E1EF7E2549B499007297ED /* Project object */;
+}
