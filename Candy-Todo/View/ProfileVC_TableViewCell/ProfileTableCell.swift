@@ -21,13 +21,16 @@ class ProfileTableCell: UITableViewCell {
         get{optionSwitch.isOn}
         set{optionSwitch.setOn(newValue, animated: true)}
     }
+    
+    var optionChanged_Handle: Handle_BoolArg?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     @IBAction func optionSwitched(_ sender: Any) {
         optionSwitchState = optionSwitch.isOn ? true : false
-        print(optionSwitch.isOn)
+        optionChanged_Handle?(optionSwitchState)
     }
     
     func configure(title: String, state: Bool) {

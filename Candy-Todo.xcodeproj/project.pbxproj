@@ -20,11 +20,19 @@
 		8403C9B1254B062D0050CDC7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C9B0254B062D0050CDC7 /* ProfileVC.swift */; };
 		8403C9C4254B1E110050CDC7 /* ProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C9C2254B1E110050CDC7 /* ProfileTableCell.swift */; };
 		8403C9C5254B1E110050CDC7 /* ProfileTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403C9C3254B1E110050CDC7 /* ProfileTableCell.xib */; };
+		8433405D254D7D8F002737C8 /* TodayNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433405C254D7D8F002737C8 /* TodayNavController.swift */; };
+		84334062254D7DD8002737C8 /* ScheduleNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334061254D7DD8002737C8 /* ScheduleNavController.swift */; };
+		84334067254D7DFA002737C8 /* NotificationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334066254D7DFA002737C8 /* NotificationNavController.swift */; };
+		8433406C254D7E15002737C8 /* ProfileNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433406B254D7E15002737C8 /* ProfileNavController.swift */; };
+		84334071254D7E39002737C8 /* NewTaskNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334070254D7E39002737C8 /* NewTaskNavController.swift */; };
+		84334076254D7E54002737C8 /* MenuNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334075254D7E54002737C8 /* MenuNavController.swift */; };
+		84334087254D80AE002737C8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334086254D80AE002737C8 /* TabBarViewController.swift */; };
 		8435EE77254C3223008F9762 /* TextFieldTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435EE75254C3223008F9762 /* TextFieldTableCell.swift */; };
 		8435EE78254C3223008F9762 /* TextFieldTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8435EE76254C3223008F9762 /* TextFieldTableCell.xib */; };
 		8435EE93254C53DC008F9762 /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435EE91254C53DC008F9762 /* MenuTableCell.swift */; };
 		8435EE94254C53DC008F9762 /* MenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8435EE92254C53DC008F9762 /* MenuTableCell.xib */; };
 		845459652549D85E008BBEFC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845459642549D85E008BBEFC /* UIViewController.swift */; };
+		8460F9B7254D29F2008EFB02 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460F9B6254D29F2008EFB02 /* ToDo.swift */; };
 		846B2F14254AAC7800E0F6B6 /* TodaysListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B2F13254AAC7800E0F6B6 /* TodaysListVC.swift */; };
 		846B2F1A254AAFFB00E0F6B6 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B2F18254AAFFB00E0F6B6 /* ToDoCell.swift */; };
 		846B2F1B254AAFFB00E0F6B6 /* ToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B2F19254AAFFB00E0F6B6 /* ToDoCell.xib */; };
@@ -47,6 +55,11 @@
 		84E1EFAC2549B49C007297ED /* Candy_TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EFAB2549B49C007297ED /* Candy_TodoUITests.swift */; };
 		84E1EFC32549C23E007297ED /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EFC22549C23E007297ED /* AuthTextField.swift */; };
 		84E1EFE82549C74D007297ED /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1EFE72549C74D007297ED /* AuthButton.swift */; };
+		84FD5442254D4743009A7466 /* DatePickerTextField_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5440254D4743009A7466 /* DatePickerTextField_TableViewCell.swift */; };
+		84FD5443254D4743009A7466 /* DatePickerTextField_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FD5441254D4743009A7466 /* DatePickerTextField_TableViewCell.xib */; };
+		84FD5448254D5454009A7466 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5447254D5454009A7466 /* UITextField.swift */; };
+		84FD544D254D54B3009A7466 /* NewTaskVC_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD544C254D54B3009A7466 /* NewTaskVC_Helper.swift */; };
+		84FD5452254D5600009A7466 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5451254D5600009A7466 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,11 +93,19 @@
 		8403C9B0254B062D0050CDC7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		8403C9C2254B1E110050CDC7 /* ProfileTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableCell.swift; sourceTree = "<group>"; };
 		8403C9C3254B1E110050CDC7 /* ProfileTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableCell.xib; sourceTree = "<group>"; };
+		8433405C254D7D8F002737C8 /* TodayNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayNavController.swift; sourceTree = "<group>"; };
+		84334061254D7DD8002737C8 /* ScheduleNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNavController.swift; sourceTree = "<group>"; };
+		84334066254D7DFA002737C8 /* NotificationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNavController.swift; sourceTree = "<group>"; };
+		8433406B254D7E15002737C8 /* ProfileNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavController.swift; sourceTree = "<group>"; };
+		84334070254D7E39002737C8 /* NewTaskNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskNavController.swift; sourceTree = "<group>"; };
+		84334075254D7E54002737C8 /* MenuNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavController.swift; sourceTree = "<group>"; };
+		84334086254D80AE002737C8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8435EE75254C3223008F9762 /* TextFieldTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableCell.swift; sourceTree = "<group>"; };
 		8435EE76254C3223008F9762 /* TextFieldTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableCell.xib; sourceTree = "<group>"; };
 		8435EE91254C53DC008F9762 /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
 		8435EE92254C53DC008F9762 /* MenuTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableCell.xib; sourceTree = "<group>"; };
 		845459642549D85E008BBEFC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		8460F9B6254D29F2008EFB02 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		846B2F13254AAC7800E0F6B6 /* TodaysListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysListVC.swift; sourceTree = "<group>"; };
 		846B2F18254AAFFB00E0F6B6 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		846B2F19254AAFFB00E0F6B6 /* ToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCell.xib; sourceTree = "<group>"; };
@@ -113,6 +134,11 @@
 		84E1EFAD2549B49C007297ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E1EFC22549C23E007297ED /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		84E1EFE72549C74D007297ED /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		84FD5440254D4743009A7466 /* DatePickerTextField_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField_TableViewCell.swift; sourceTree = "<group>"; };
+		84FD5441254D4743009A7466 /* DatePickerTextField_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTextField_TableViewCell.xib; sourceTree = "<group>"; };
+		84FD5447254D5454009A7466 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		84FD544C254D54B3009A7466 /* NewTaskVC_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskVC_Helper.swift; sourceTree = "<group>"; };
+		84FD5451254D5600009A7466 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		942E739D5223632580681D45 /* Pods-Candy-Todo-Candy-TodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy-Todo-Candy-TodoUITests.release.xcconfig"; path = "Target Support Files/Pods-Candy-Todo-Candy-TodoUITests/Pods-Candy-Todo-Candy-TodoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A84F1691A9C405560E707125 /* Pods-Candy-Todo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy-Todo.release.xcconfig"; path = "Target Support Files/Pods-Candy-Todo/Pods-Candy-Todo.release.xcconfig"; sourceTree = "<group>"; };
 		C12FC4C5DD495EE340252ECC /* Pods_Candy_TodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy_TodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,11 +206,52 @@
 			path = ProfileVC_TableViewCell;
 			sourceTree = "<group>";
 		};
+		8433407A254D7EE5002737C8 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				848D6CEC254C7088002817C9 /* AuthNavController.swift */,
+				8433405C254D7D8F002737C8 /* TodayNavController.swift */,
+				84334061254D7DD8002737C8 /* ScheduleNavController.swift */,
+				84334066254D7DFA002737C8 /* NotificationNavController.swift */,
+				8433406B254D7E15002737C8 /* ProfileNavController.swift */,
+				84334070254D7E39002737C8 /* NewTaskNavController.swift */,
+				84334075254D7E54002737C8 /* MenuNavController.swift */,
+			);
+			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		8433407E254D7F0A002737C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8433407F254D7F1C002737C8 /* AuthViewControllers */,
+				846B2F13254AAC7800E0F6B6 /* TodaysListVC.swift */,
+				8403C98A254AFD0D0050CDC7 /* SchedulerVC.swift */,
+				8403C9AB254B06110050CDC7 /* NotificationVC.swift */,
+				8403C9B0254B062D0050CDC7 /* ProfileVC.swift */,
+				84D59536254C28FF006CE8D9 /* NewTaskVC.swift */,
+				84FD544C254D54B3009A7466 /* NewTaskVC_Helper.swift */,
+				848D6CDD254C5A3C002817C9 /* ManuVC.swift */,
+				848D6CE2254C644C002817C9 /* EditProfileVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8433407F254D7F1C002737C8 /* AuthViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84E1EF8D2549B499007297ED /* LoginVC.swift */,
+				84C05E172549CDC100F555E0 /* RegisterVC.swift */,
+			);
+			path = AuthViewControllers;
+			sourceTree = "<group>";
+		};
 		8435EE7C254C322E008F9762 /* TextField_TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				8435EE75254C3223008F9762 /* TextFieldTableCell.swift */,
 				8435EE76254C3223008F9762 /* TextFieldTableCell.xib */,
+				84FD5440254D4743009A7466 /* DatePickerTextField_TableViewCell.swift */,
+				84FD5441254D4743009A7466 /* DatePickerTextField_TableViewCell.xib */,
 			);
 			path = TextField_TableViewCell;
 			sourceTree = "<group>";
@@ -208,6 +275,7 @@
 				8403C9A1254B01400050CDC7 /* NSObject.swift */,
 				8403C9A6254B01A50050CDC7 /* UIView.swift */,
 				848D6CE7254C6E8B002817C9 /* Date.swift */,
+				84FD5447254D5454009A7466 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +323,7 @@
 				84E1EFC12549C198007297ED /* Controller */,
 				84E1EF922549B49C007297ED /* Assets.xcassets */,
 				84E1EF972549B49C007297ED /* Info.plist */,
+				84FD5451254D5600009A7466 /* DataService.swift */,
 			);
 			path = "Candy-Todo";
 			sourceTree = "<group>";
@@ -280,6 +349,7 @@
 		84E1EFBF2549C184007297ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8460F9B6254D29F2008EFB02 /* ToDo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,16 +372,9 @@
 		84E1EFC12549C198007297ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84E1EF8D2549B499007297ED /* LoginVC.swift */,
-				84C05E172549CDC100F555E0 /* RegisterVC.swift */,
-				846B2F13254AAC7800E0F6B6 /* TodaysListVC.swift */,
-				8403C98A254AFD0D0050CDC7 /* SchedulerVC.swift */,
-				8403C9AB254B06110050CDC7 /* NotificationVC.swift */,
-				8403C9B0254B062D0050CDC7 /* ProfileVC.swift */,
-				84D59536254C28FF006CE8D9 /* NewTaskVC.swift */,
-				848D6CDD254C5A3C002817C9 /* ManuVC.swift */,
-				848D6CE2254C644C002817C9 /* EditProfileVC.swift */,
-				848D6CEC254C7088002817C9 /* AuthNavController.swift */,
+				84334086254D80AE002737C8 /* TabBarViewController.swift */,
+				8433407A254D7EE5002737C8 /* NavigationControllers */,
+				8433407E254D7F0A002737C8 /* ViewControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -444,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E1EF962549B49C007297ED /* LaunchScreen.storyboard in Resources */,
+				84FD5443254D4743009A7466 /* DatePickerTextField_TableViewCell.xib in Resources */,
 				84E1EF932549B49C007297ED /* Assets.xcassets in Resources */,
 				8403C9C5254B1E110050CDC7 /* ProfileTableCell.xib in Resources */,
 				8403C993254AFF6D0050CDC7 /* SectionHeaderView.xib in Resources */,
@@ -586,23 +650,35 @@
 				8403C98B254AFD0D0050CDC7 /* SchedulerVC.swift in Sources */,
 				848D6CDE254C5A3C002817C9 /* ManuVC.swift in Sources */,
 				84D59537254C28FF006CE8D9 /* NewTaskVC.swift in Sources */,
+				84334071254D7E39002737C8 /* NewTaskNavController.swift in Sources */,
+				84FD5452254D5600009A7466 /* DataService.swift in Sources */,
+				84334067254D7DFA002737C8 /* NotificationNavController.swift in Sources */,
+				84FD5448254D5454009A7466 /* UITextField.swift in Sources */,
 				8403C998254AFF930050CDC7 /* SectionHeaderView.swift in Sources */,
 				8403C9A2254B01400050CDC7 /* NSObject.swift in Sources */,
 				8403C9C4254B1E110050CDC7 /* ProfileTableCell.swift in Sources */,
 				8403C983254AF8880050CDC7 /* Constants.swift in Sources */,
+				84334076254D7E54002737C8 /* MenuNavController.swift in Sources */,
 				84E1EFC32549C23E007297ED /* AuthTextField.swift in Sources */,
 				84E1EFE82549C74D007297ED /* AuthButton.swift in Sources */,
+				84FD5442254D4743009A7466 /* DatePickerTextField_TableViewCell.swift in Sources */,
 				848D6CED254C7088002817C9 /* AuthNavController.swift in Sources */,
 				84E1EF8E2549B499007297ED /* LoginVC.swift in Sources */,
 				84E1EF8A2549B499007297ED /* AppDelegate.swift in Sources */,
 				84C05E182549CDC100F555E0 /* RegisterVC.swift in Sources */,
 				8403C9A7254B01A50050CDC7 /* UIView.swift in Sources */,
+				8460F9B7254D29F2008EFB02 /* ToDo.swift in Sources */,
+				84334062254D7DD8002737C8 /* ScheduleNavController.swift in Sources */,
 				846B2F14254AAC7800E0F6B6 /* TodaysListVC.swift in Sources */,
 				848D6CD8254C56E9002817C9 /* Menu_UserTableCell.swift in Sources */,
+				8433406C254D7E15002737C8 /* ProfileNavController.swift in Sources */,
 				846B2F20254ABA3D00E0F6B6 /* UITableView.swift in Sources */,
 				8403C9B1254B062D0050CDC7 /* ProfileVC.swift in Sources */,
 				846B2F1A254AAFFB00E0F6B6 /* ToDoCell.swift in Sources */,
+				84334087254D80AE002737C8 /* TabBarViewController.swift in Sources */,
+				84FD544D254D54B3009A7466 /* NewTaskVC_Helper.swift in Sources */,
 				84E1EF8C2549B499007297ED /* SceneDelegate.swift in Sources */,
+				8433405D254D7D8F002737C8 /* TodayNavController.swift in Sources */,
 				848D6CE3254C644C002817C9 /* EditProfileVC.swift in Sources */,
 				8403C9AC254B06110050CDC7 /* NotificationVC.swift in Sources */,
 			);

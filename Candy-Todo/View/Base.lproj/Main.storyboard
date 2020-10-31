@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6nt-f0-nTB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BdP-aL-8f1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -488,10 +488,10 @@
             </objects>
             <point key="canvasLocation" x="-422" y="2279"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="ILw-6X-ms1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BdP-aL-8f1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="BdP-aL-8f1" customClass="TabBarViewController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nUd-f7-TNq">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -594,10 +594,10 @@
             </objects>
             <point key="canvasLocation" x="388" y="2292"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Today Nav Controller-->
         <scene sceneID="qD1-f0-g9V">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eeA-8k-ATM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TodayNavController" automaticallyAdjustsScrollViewInsets="NO" id="eeA-8k-ATM" customClass="TodayNavController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="List-icon" id="emr-kt-ELI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tdk-lX-dEp">
@@ -623,10 +623,10 @@
             </objects>
             <point key="canvasLocation" x="-422" y="1576"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Schedule Nav Controller-->
         <scene sceneID="813-0s-0qs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XwQ-1E-UDm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ScheduleNavController" automaticallyAdjustsScrollViewInsets="NO" id="XwQ-1E-UDm" customClass="ScheduleNavController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="clock-icon" id="GTD-jd-WAc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fQx-hR-wVU">
@@ -733,10 +733,10 @@ updates —</string>
             </objects>
             <point key="canvasLocation" x="2057" y="2291"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Notification Nav Controller-->
         <scene sceneID="81c-Xs-Pan">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XGg-c9-BcU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NotificationNavController" automaticallyAdjustsScrollViewInsets="NO" id="XGg-c9-BcU" customClass="NotificationNavController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Bell-icons" id="CFX-Jq-G1L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P2y-xe-OkF">
@@ -863,10 +863,10 @@ updates —</string>
             </objects>
             <point key="canvasLocation" x="2914" y="2291"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile Nav Controller-->
         <scene sceneID="THg-Kh-Yst">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lsk-40-FJn" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="lsk-40-FJn" customClass="ProfileNavController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="User-icons" id="5S4-nA-TTY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qMA-8u-gEw">
@@ -942,14 +942,27 @@ updates —</string>
                                     <outlet property="delegate" destination="H1H-PR-s3n" id="49E-On-sve"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-ai-rpz">
+                                <rect key="frame" x="166.5" y="814" width="81" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mnb-ai-rpz" secondAttribute="height" multiplier="71:44" id="7IY-9z-mN2"/>
+                                    <constraint firstAttribute="height" constant="50" id="iAZ-6G-Ohg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Add-Button"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="H1H-PR-s3n" eventType="touchUpInside" id="GQO-95-eay"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A8w-8v-1OB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mnb-ai-rpz" firstAttribute="centerX" secondItem="Rrg-dG-lYE" secondAttribute="centerX" id="2P1-Ma-2fe"/>
                             <constraint firstItem="G69-iQ-EZx" firstAttribute="leading" secondItem="A8w-8v-1OB" secondAttribute="leading" constant="32" id="5qo-WV-kwB"/>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="leading" secondItem="A8w-8v-1OB" secondAttribute="leading" id="Kg4-TN-JtI"/>
                             <constraint firstItem="A8w-8v-1OB" firstAttribute="trailing" secondItem="G69-iQ-EZx" secondAttribute="trailing" constant="32" id="NcP-bi-YdH"/>
                             <constraint firstItem="G69-iQ-EZx" firstAttribute="top" secondItem="H2A-9r-1cR" secondAttribute="bottom" constant="20" id="Rg2-vM-LX8"/>
+                            <constraint firstAttribute="bottom" secondItem="mnb-ai-rpz" secondAttribute="bottom" constant="32" id="ZkY-Os-rTw"/>
                             <constraint firstItem="G69-iQ-EZx" firstAttribute="bottom" secondItem="A8w-8v-1OB" secondAttribute="bottom" constant="67" id="bbx-CT-Vt1"/>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="trailing" secondItem="A8w-8v-1OB" secondAttribute="trailing" id="e82-93-o7Y"/>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="top" secondItem="A8w-8v-1OB" secondAttribute="top" id="zOg-GH-Hzj"/>
@@ -972,12 +985,12 @@ updates —</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXg-NG-9Mz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="2291"/>
+            <point key="canvasLocation" x="1269.5652173913045" y="2290.8482142857142"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--New Task Nav Controller-->
         <scene sceneID="oM9-vF-zhg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oPG-1b-xpk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NewTaskNavController" automaticallyAdjustsScrollViewInsets="NO" id="oPG-1b-xpk" customClass="NewTaskNavController" customModule="Candy_Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Add-Button" largeContentSizeImage="New-Button" selectedImage="New-Button" id="zfb-Sd-Y3K">
                         <inset key="imageInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>

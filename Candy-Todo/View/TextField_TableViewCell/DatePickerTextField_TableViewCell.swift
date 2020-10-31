@@ -1,13 +1,13 @@
 //
-//  TextFieldTableCell.swift
+//  DatePickerTextField_TableViewCell.swift
 //  Candy-Todo
 //
-//  Created by اسرارالحق  on 30/10/2020.
+//  Created by اسرارالحق  on 31/10/2020.
 //
 
 import UIKit
 
-class TextFieldTableCell: UITableViewCell {
+class DatePickerTextField_TableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: AuthTextField!
@@ -32,12 +32,15 @@ class TextFieldTableCell: UITableViewCell {
         set{textField.rightImage = newValue}
     }
     
-    var textDidChange_Handle: Handle_StringArg?
+    var textDidChange_Handle: Handle_DateArg?
     let picker = UIDatePicker()
+    var todoDate = Date()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         textField.delegate = self
+        self.textField.setInputViewDatePicker(target: self, selector: #selector(tapDone(sender:datePicker1:))) //1
+        textField.inputView = picker
     }
     
     func configure(title: String, placeHolder: String, rightIcon: UIImage?) {
@@ -45,16 +48,28 @@ class TextFieldTableCell: UITableViewCell {
         self.placeHolder = placeHolder
         self.textFieldRightIcon = rightIcon
     }
-
     
-}
-
-extension TextFieldTableCell: UITextFieldDelegate {
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        fieldText = textField.text ?? ""
-        textDidChange_Handle?(fieldText)
+    
+    @objc func tapDone(sender: Any, datePicker1: UIDatePicker) {
+        print(datePicker1)
+        if let datePicker = self.textField.inputView as? UIDatePicker { // 2.1
+            let dateformatter = DateFormatter() // 2.2
+            dateformatter.dateStyle = .medium // 2.3
+            self.textField.text = dateformatter.string(from: datePicker.date) //2.4
+        }
+        self.textField.resignFirstResponder() // 2.5
     }
     
     
 }
+
+extension DatePickerTextField_TableViewCell: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        fieldText = textField.text ?? ""
+        textDidChange_Handle?(todoDate)
+    }
+    
+    
+}
+
 

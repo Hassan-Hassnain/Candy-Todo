@@ -14,9 +14,13 @@ struct K {
     static let alertMark = UIImage(named: "AlertMark")
     static let questionMark = UIImage(named: "QuestionMark")
     static let emptyString = ""
+    
+    
 }
 
 
 //MARK: - CLOSURE
 
 typealias Handle_BoolArg = (Bool) -> Void
+typealias Handle_StringArg = (String) -> Void
+typealias Handle_DateArg = (Date) -> Void

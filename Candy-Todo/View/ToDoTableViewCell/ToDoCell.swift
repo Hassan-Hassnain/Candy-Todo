@@ -17,6 +17,11 @@ class ToDoCell: UITableViewCell {
         set{checkMarkImageView.image = newValue}
     }
     
+    var title: String {
+        get{todoTitle.text ?? ""}
+        set{todoTitle.text = newValue}
+    }
+    
     var isThisCellChecked: Handle_BoolArg?
     
     override func awakeFromNib() {

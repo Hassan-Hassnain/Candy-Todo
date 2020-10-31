@@ -11,15 +11,20 @@ import SideMenu
 class TodaysListVC: UIViewController {
 
     var menu: SideMenuNavigationController?
+    var todos = [ToDo]()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.regCell(cellName: ToDoCell.className)
-        
         setUpSidMenu(menu: &menu)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        todos = DataManager.shared.getToDos()
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func menuButtonTapped(_ sender: Any) {
@@ -33,12 +38,12 @@ class TodaysListVC: UIViewController {
 extension TodaysListVC:UITableViewDelegate, UITableViewDataSource {
   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        12
+        todos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ToDoCell.className) as? ToDoCell else { return UITableViewCell() }
-        
+        cell.title = todos[indexPath.row].title
         cell.isThisCellChecked = { state in
             if state { print("Cell is checked")} else { print("Cell unChecked--------")}
         }
