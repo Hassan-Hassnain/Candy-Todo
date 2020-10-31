@@ -34,13 +34,11 @@ class DatePickerTextField_TableViewCell: UITableViewCell {
     
     var textDidChange_Handle: Handle_DateArg?
     let picker = UIDatePicker()
-    var todoDate = Date()
+    var todoDate: Date?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        textField.delegate = self
-        self.textField.setInputViewDatePicker(target: self, selector: #selector(tapDone(sender:datePicker1:))) //1
-        textField.inputView = picker
+        setInputViewDatePicker()
     }
     
     func configure(title: String, placeHolder: String, rightIcon: UIImage?) {
@@ -49,27 +47,28 @@ class DatePickerTextField_TableViewCell: UITableViewCell {
         self.textFieldRightIcon = rightIcon
     }
     
+    func setInputViewDatePicker () {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
+        
+        toolbar.setItems([doneButton], animated: true)
+        
+        textField.inputAccessoryView = toolbar
+        textField.inputView = picker
+    }
     
-    @objc func tapDone(sender: Any, datePicker1: UIDatePicker) {
-        print(datePicker1)
-        if let datePicker = self.textField.inputView as? UIDatePicker { // 2.1
-            let dateformatter = DateFormatter() // 2.2
-            dateformatter.dateStyle = .medium // 2.3
-            self.textField.text = dateformatter.string(from: datePicker.date) //2.4
-        }
-        self.textField.resignFirstResponder() // 2.5
+    
+    @objc func doneButtonTapped() {
+        print(picker.date)
+        fieldText = picker.date.toString()
+        textDidChange_Handle?(picker.date)
+        self.textField.resignFirstResponder()
     }
     
     
 }
 
-extension DatePickerTextField_TableViewCell: UITextFieldDelegate {
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        fieldText = textField.text ?? ""
-        textDidChange_Handle?(todoDate)
-    }
-    
-    
-}
 
 

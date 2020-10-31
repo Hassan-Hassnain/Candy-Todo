@@ -54,6 +54,7 @@ extension NewTaskVC {
         cell.configure(title: "Complete by", placeHolder: "Select a Date", rightIcon: nil)
         cell.textDidChange_Handle = { date in
             self.todo.date = date
+            print("Selected date = \(self.todo)")
         }
         return cell
     }

@@ -943,10 +943,10 @@ updates —</string>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-ai-rpz">
-                                <rect key="frame" x="166.5" y="814" width="81" height="50"/>
+                                <rect key="frame" x="157" y="780" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="mnb-ai-rpz" secondAttribute="height" multiplier="71:44" id="7IY-9z-mN2"/>
-                                    <constraint firstAttribute="height" constant="50" id="iAZ-6G-Ohg"/>
+                                    <constraint firstAttribute="width" secondItem="mnb-ai-rpz" secondAttribute="height" multiplier="1:1" id="7IY-9z-mN2"/>
+                                    <constraint firstAttribute="height" constant="100" id="iAZ-6G-Ohg"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Add-Button"/>
                                 <connections>
@@ -962,7 +962,7 @@ updates —</string>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="leading" secondItem="A8w-8v-1OB" secondAttribute="leading" id="Kg4-TN-JtI"/>
                             <constraint firstItem="A8w-8v-1OB" firstAttribute="trailing" secondItem="G69-iQ-EZx" secondAttribute="trailing" constant="32" id="NcP-bi-YdH"/>
                             <constraint firstItem="G69-iQ-EZx" firstAttribute="top" secondItem="H2A-9r-1cR" secondAttribute="bottom" constant="20" id="Rg2-vM-LX8"/>
-                            <constraint firstAttribute="bottom" secondItem="mnb-ai-rpz" secondAttribute="bottom" constant="32" id="ZkY-Os-rTw"/>
+                            <constraint firstAttribute="bottom" secondItem="mnb-ai-rpz" secondAttribute="bottom" constant="16" id="ZkY-Os-rTw"/>
                             <constraint firstItem="G69-iQ-EZx" firstAttribute="bottom" secondItem="A8w-8v-1OB" secondAttribute="bottom" constant="67" id="bbx-CT-Vt1"/>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="trailing" secondItem="A8w-8v-1OB" secondAttribute="trailing" id="e82-93-o7Y"/>
                             <constraint firstItem="H2A-9r-1cR" firstAttribute="top" secondItem="A8w-8v-1OB" secondAttribute="top" id="zOg-GH-Hzj"/>

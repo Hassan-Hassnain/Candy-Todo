@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "Note-icons.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Note-icons.png",
+      "filename" : "Note-icons@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Note-icons@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

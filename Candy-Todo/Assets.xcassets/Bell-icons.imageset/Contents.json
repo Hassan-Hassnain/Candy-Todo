@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "Bell-icons.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Bell-icons.png",
+      "filename" : "Bell-icons@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Bell-icons@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

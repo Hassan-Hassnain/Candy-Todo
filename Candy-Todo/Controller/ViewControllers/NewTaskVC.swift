@@ -64,17 +64,3 @@ extension NewTaskVC: UITableViewDelegate, UITableViewDataSource {
     
     
 }
-
-
-extension UIApplication {
-    /*function will return reference to tabbarcontroller */
-    func tabbarController() -> UIViewController? {
-        guard let vcs = self.keyWindow?.rootViewController?.children else { return nil }
-        for vc in vcs {
-            if  let _ = vc as? TabBarViewController {
-                return vc
-            }
-        }
-        return nil
-    }
-}
