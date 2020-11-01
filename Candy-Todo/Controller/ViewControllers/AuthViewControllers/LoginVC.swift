@@ -31,7 +31,6 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-//        navigationController?.pushViewController((storyboard?.instantiateViewController(withIdentifier: RegisterVC.className))!, animated: true)
         navigationController?.pushViewController(RegisterVC.initVC(), animated: true)
     }
     

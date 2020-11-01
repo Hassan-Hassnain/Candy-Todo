@@ -9,7 +9,7 @@ import UIKit
 
 class MenuVC: UITableViewController {
     
-    var MenuItems = ["UserInfoCell","To-do", "Scheduler", "Notification","Profile","Logout"]
+    var MenuItems = K.Menu.menu       
     
     override func viewDidLoad() {
         super.viewDidLoad()

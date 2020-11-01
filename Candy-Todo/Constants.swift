@@ -18,6 +18,31 @@ struct K {
     static let today = "Today"
     static let tomorrow = "Tomorrow"
     
+    
+    struct Profile {
+        struct SectionHeader {
+            static let zero = "Notification Settings"
+            static let one = "Floss Settings"
+        }
+        struct Cell {
+            static let getEmailNotification = "Get email notifications"
+            static let vibrateOnAlert = "Vibrate on alert"
+            static let shareProfileWithFlossUser = "Share profile with other floss users"
+            static let showTaskCompletionStatus = "Show your task completion status"
+        }
+    }
+    
+    struct Menu {
+        static let menu = ["Cell for user Info", "To-do", "Scheduler", "Notification", "Profile", "Logout"]
+    }
+    
+    struct DummyUser {
+        static let title = "Email"
+        static let placeHolder = "john@email.com"
+        
+    }
+    
+    
 }
 
 

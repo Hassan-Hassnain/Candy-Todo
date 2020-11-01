@@ -316,13 +316,13 @@
 				84E1EF892549B499007297ED /* AppDelegate.swift */,
 				84E1EF8B2549B499007297ED /* SceneDelegate.swift */,
 				8403C982254AF8880050CDC7 /* Constants.swift */,
+				84FD5451254D5600009A7466 /* DataService.swift */,
 				845459632549D831008BBEFC /* Extensions */,
 				84E1EFBF2549C184007297ED /* Model */,
 				84E1EFC02549C18F007297ED /* View */,
 				84E1EFC12549C198007297ED /* Controller */,
 				84E1EF922549B49C007297ED /* Assets.xcassets */,
 				84E1EF972549B49C007297ED /* Info.plist */,
-				84FD5451254D5600009A7466 /* DataService.swift */,
 			);
 			path = "Candy-Todo";
 			sourceTree = "<group>";

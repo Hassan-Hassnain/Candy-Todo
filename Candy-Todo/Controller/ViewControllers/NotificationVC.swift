@@ -74,6 +74,8 @@ extension NotificationVC: UITableViewDelegate, UITableViewDataSource {
     
 }
 
+
+//MARK: - HELPER FUNCTIONS
 extension NotificationVC {
     
     func headerViewForSection(_ section: Int) -> UIView? {

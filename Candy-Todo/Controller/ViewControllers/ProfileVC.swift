@@ -90,9 +90,9 @@ extension ProfileVC {
     fileprivate func setSectionHeaderTitle(_ section: Int, _ headerView: SectionHeaderView) {
         switch section {
         case 0:
-            headerView.headerText = "Notification Settings"
+            headerView.headerText = K.Profile.SectionHeader.zero
         case 1:
-            headerView.headerText = "Floss Settings"
+            headerView.headerText = K.Profile.SectionHeader.one
             
         default:
             break
@@ -114,9 +114,9 @@ extension ProfileVC {
     fileprivate func populateSection_One(_ indexPath: IndexPath, _ cell: ProfileTableCell) {
         switch indexPath.row {
         case 0:
-            cell.cellTitle = "Get email notifications"
+            cell.cellTitle = K.Profile.Cell.getEmailNotification
         case 1:
-            cell.cellTitle = "Vibrate on alert"
+            cell.cellTitle = K.Profile.Cell.vibrateOnAlert
         default:
             break
         }
@@ -125,9 +125,9 @@ extension ProfileVC {
     fileprivate func populateSection_Two(_ indexPath: IndexPath, _ cell: ProfileTableCell) {
         switch indexPath.row {
         case 0:
-            cell.cellTitle = "Share profile with other floss users"
+            cell.cellTitle = K.Profile.Cell.shareProfileWithFlossUser
         case 1:
-            cell.cellTitle = "Show your task completion status"
+            cell.cellTitle = K.Profile.Cell.showTaskCompletionStatus
         default:
             break
         }

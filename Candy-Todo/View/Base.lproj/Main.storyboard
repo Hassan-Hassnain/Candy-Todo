@@ -1102,16 +1102,16 @@ updates —</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Add-Button" width="88" height="88"/>
-        <image name="Bell-icons" width="18" height="21"/>
-        <image name="List-icon" width="20" height="13"/>
-        <image name="Magnifier-icons" width="21" height="21"/>
-        <image name="Menu-icons" width="20" height="16"/>
+        <image name="Add-Button" width="58.5" height="58.5"/>
+        <image name="Bell-icons" width="12" height="14"/>
+        <image name="List-icon" width="13" height="8.5"/>
+        <image name="Magnifier-icons" width="14" height="14"/>
+        <image name="Menu-icons" width="13" height="10.5"/>
         <image name="New-Button" width="88" height="88"/>
-        <image name="Note-icons" width="21" height="21"/>
-        <image name="QuestionMark" width="21" height="21"/>
-        <image name="User-icons" width="20" height="21"/>
-        <image name="clock-icon" width="20" height="21"/>
+        <image name="Note-icons" width="14" height="14"/>
+        <image name="QuestionMark" width="14" height="14"/>
+        <image name="User-icons" width="13" height="14"/>
+        <image name="clock-icon" width="13" height="14"/>
         <image name="myProfilePic" width="266.66665649414062" height="266.66665649414062"/>
         <image name="" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">

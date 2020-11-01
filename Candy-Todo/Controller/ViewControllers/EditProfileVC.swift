@@ -8,7 +8,7 @@
 import UIKit
 
 class EditProfileVC: UIViewController {
-
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ extension EditProfileVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableCell.className) as? TextFieldTableCell else { return UITableViewCell() }
-        cell.configure(title: "Email", placeHolder: "john@email.com", rightIcon: nil)
+        cell.configure(title: K.DummyUser.title, placeHolder: K.DummyUser.placeHolder, rightIcon: nil)
         return cell
         
     }
