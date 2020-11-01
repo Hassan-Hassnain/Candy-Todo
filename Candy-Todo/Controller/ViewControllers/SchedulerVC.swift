@@ -41,7 +41,6 @@ class SchedulerVC: UIViewController {
             let values = grouppedTodo[key]
             todos.append(values ?? [])
         }
-        
     }
     
 }
@@ -75,9 +74,22 @@ extension SchedulerVC {
     func headerViewForSection(_ section: Int) -> UIView? {
         let headerView = SectionHeaderView()
         if let firstTodoInSection = todos[section].first {
-            headerView.headerText = firstTodoInSection.date.toString()
+//            headerView.headerText = firstTodoInSection.date.toString()
+            headerView.headerText = getSectionHeaderText(from: firstTodoInSection.date)
         }
         return headerView
+    }
+    
+    func getSectionHeaderText(from date: Date) -> String {
+        if Date().reduceToMonthDayYear().compare(date.nextDate().reduceToMonthDayYear()) == .orderedSame {
+            return K.yesterday
+        } else if Date().reduceToMonthDayYear().compare(date.reduceToMonthDayYear()) == .orderedSame {
+            return K.today
+        } else if Date().reduceToMonthDayYear().compare(date.previousDate().reduceToMonthDayYear()) == .orderedSame {
+            return K.tomorrow
+        } else {
+            return date.toString()
+        }
     }
     
     func cellForRow(at indexPath: IndexPath) -> UITableViewCell {

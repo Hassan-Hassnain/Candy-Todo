@@ -22,6 +22,12 @@ class ToDoCell: UITableViewCell {
         set{todoTitle.text = newValue}
     }
     
+    var isFilled: Bool = true{
+        didSet{
+            checkMark = isFilled ? K.alertMark : nil
+        }
+    }
+    
     var isThisCellChecked: Handle_BoolArg?
     
     override func awakeFromNib() {

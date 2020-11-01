@@ -14,7 +14,9 @@ struct K {
     static let alertMark = UIImage(named: "AlertMark")
     static let questionMark = UIImage(named: "QuestionMark")
     static let emptyString = ""
-    
+    static let yesterday = "Yesterday"
+    static let today = "Today"
+    static let tomorrow = "Tomorrow"
     
 }
 

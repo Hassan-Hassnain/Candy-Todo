@@ -20,6 +20,7 @@
 		8403C9B1254B062D0050CDC7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C9B0254B062D0050CDC7 /* ProfileVC.swift */; };
 		8403C9C4254B1E110050CDC7 /* ProfileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C9C2254B1E110050CDC7 /* ProfileTableCell.swift */; };
 		8403C9C5254B1E110050CDC7 /* ProfileTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403C9C3254B1E110050CDC7 /* ProfileTableCell.xib */; };
+		841DE41D254E7C2F005A1853 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DE41C254E7C2F005A1853 /* User.swift */; };
 		8433405D254D7D8F002737C8 /* TodayNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433405C254D7D8F002737C8 /* TodayNavController.swift */; };
 		84334062254D7DD8002737C8 /* ScheduleNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334061254D7DD8002737C8 /* ScheduleNavController.swift */; };
 		84334067254D7DFA002737C8 /* NotificationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334066254D7DFA002737C8 /* NotificationNavController.swift */; };
@@ -92,6 +93,7 @@
 		8403C9B0254B062D0050CDC7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		8403C9C2254B1E110050CDC7 /* ProfileTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableCell.swift; sourceTree = "<group>"; };
 		8403C9C3254B1E110050CDC7 /* ProfileTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableCell.xib; sourceTree = "<group>"; };
+		841DE41C254E7C2F005A1853 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8433405C254D7D8F002737C8 /* TodayNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayNavController.swift; sourceTree = "<group>"; };
 		84334061254D7DD8002737C8 /* ScheduleNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNavController.swift; sourceTree = "<group>"; };
 		84334066254D7DFA002737C8 /* NotificationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNavController.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				8460F9B6254D29F2008EFB02 /* ToDo.swift */,
+				841DE41C254E7C2F005A1853 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				84E1EFC32549C23E007297ED /* AuthTextField.swift in Sources */,
 				84E1EFE82549C74D007297ED /* AuthButton.swift in Sources */,
 				84FD5442254D4743009A7466 /* DatePickerTextField_TableViewCell.swift in Sources */,
+				841DE41D254E7C2F005A1853 /* User.swift in Sources */,
 				848D6CED254C7088002817C9 /* AuthNavController.swift in Sources */,
 				84E1EF8E2549B499007297ED /* LoginVC.swift in Sources */,
 				84E1EF8A2549B499007297ED /* AppDelegate.swift in Sources */,
